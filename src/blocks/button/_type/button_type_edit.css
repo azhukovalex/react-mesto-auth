@@ -1,0 +1,17 @@
+.button_type_edit {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../../images/Edit.svg);
+    margin-left: 19px;
+    margin-top: 18px;
+    border: 1px solid white;
+    background-color: black;
+  }
+  
+  @media (max-width: 645px) {
+    .button_type_edit {
+      width: 18px;
+      height: 18px;
+      margin: 34px 0px 12px 9px;
+    }
+  }

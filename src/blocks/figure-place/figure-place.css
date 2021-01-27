@@ -1,0 +1,12 @@
+@import url(./__image/figure-place__image.css);
+@import url(./__image-caption/figure-place__image-caption.css);
+
+.figure-place {
+    margin: 10px;
+}
+
+@media (max-width: 350px) {
+    .figure-place {
+        margin: 3px;
+    }
+}

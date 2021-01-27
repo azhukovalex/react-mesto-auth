@@ -1,0 +1,26 @@
+
+@import url(./_type/button_type_add.css);
+@import url(./_type/button_type_close.css);
+@import url(./_type/button_type_edit.css);
+@import url(./_type/button_type_like.css);
+@import url(./_type/button_type_avatar.css);
+@import url(./_type/button_type_login.css);
+
+
+
+.button {
+        cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    
+    }
+  
+  .button:focus {
+    outline: none;
+  }
+

@@ -1,0 +1,7 @@
+.popup__tip-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 60px auto 32px;
+    
+}

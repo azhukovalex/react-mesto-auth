@@ -1,0 +1,25 @@
+.card-list {
+    -ms-grid-row-align: center;
+        align-items: center;
+    -ms-grid-column-align: center;
+        justify-items: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (282px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 282px);
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
+    row-gap: 19px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  @media (max-width: 919px) {
+    .card-list {
+      row-gap: 21px;
+    }
+  }

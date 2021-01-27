@@ -1,0 +1,17 @@
+@import url(./__image/card__image.css);
+@import url(./__description/card__description.css);
+@import url(./__title/card__title.css);
+@import url(./__like-counter/card__like_counter.css);
+@import url(./__like/card__like.css);
+.card {
+    border-radius: 10px;
+    max-width: 282px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }

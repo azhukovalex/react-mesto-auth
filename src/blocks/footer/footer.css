@@ -1,0 +1,16 @@
+@import url(./__text/footer__text.css);
+
+.footer {
+  width: 100%;
+  max-width: 882px;
+  margin: 0 auto;
+  padding-top: 34px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 645px) {
+  .footer {
+    max-width: 282px;
+    padding-top: 0px;
+  }
+}

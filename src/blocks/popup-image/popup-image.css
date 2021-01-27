@@ -1,0 +1,18 @@
+@import url(./__container/popup-image__container.css);
+@import url(./__image-login/popup__image_login.css);
+.popup-image {
+  -webkit-transition: visibility 0.5s, opacity 0.5s ease;
+  transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+.popup-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}

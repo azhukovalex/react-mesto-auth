@@ -1,0 +1,13 @@
+.button_type_like {
+    background-image: url(../../../images/Like.svg);
+    width: 21px;
+    height: 19px;
+    background-color: white;
+    background-repeat: no-repeat;
+    
+    border: none;
+  }
+
+  .button_type_like-liked {
+    background-image: url(../../../images/liked.svg);
+  }

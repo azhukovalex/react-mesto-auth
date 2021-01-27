@@ -1,0 +1,7 @@
+.popup__login {
+    visibility: visible;
+    opacity: unset;
+    position: relative;
+    max-width: 882px;
+    margin: 0 auto auto;
+}

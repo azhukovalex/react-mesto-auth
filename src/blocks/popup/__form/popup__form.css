@@ -1,0 +1,26 @@
+.popup__form {
+  width: 358px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 34px 36px 37px;
+  margin: auto;
+}
+
+@media (max-width: 619px) {
+  .popup__form {
+    width: 210px;
+    width: 186px; /* было 210px */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /*доработка*/
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; /*доработка*/
+  }
+}

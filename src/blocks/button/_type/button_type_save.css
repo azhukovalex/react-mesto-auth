@@ -1,0 +1,34 @@
+.button_type_save {
+  color: white;
+  background-color: black;
+  border: none;
+  width: 358px;
+  margin-top: 49px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding: 16px 125px 13px;
+}
+
+@media (max-width: 619px) {
+  .button_type_save {
+    width: 212px;
+    padding: 16px 0 13px;
+    margin-top: 20px;
+  }
+}
+
+.button_type_save:hover {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.button_type_save_inactive {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  cursor: default;
+  color: black;
+  background-color: white;
+  pointer-events: none;
+  border: 1px solid #000000;
+}
