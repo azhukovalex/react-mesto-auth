@@ -35,6 +35,7 @@ export function Register(props) {
               required placeholder="Email"
               name="email" minLength="2"
               maxLength="40"
+              value={email || ""}
               onChange={handleEmailChange} />
             <span className="popup__span-error"
               id="input-name-error" />
@@ -47,6 +48,7 @@ export function Register(props) {
               name="password"
               minLength="2"
               maxLength="200"
+              value={password || ""}
               onChange={handlePasswordChange} />
             <span className="popup__span-error"
               id="input-profession-error" />

@@ -45,6 +45,7 @@ export function Login(props) {
               required placeholder="Email"
               name="email" minLength="2"
               maxLength="40"
+              value={email || ""}
               onChange={handleEmailChange} />
             <span className="popup__span-error" id="input-name-error" />
             <input className="popup__form-input popup__form-input_login"
@@ -55,6 +56,7 @@ export function Login(props) {
               name="password"
               minLength="2"
               maxLength="200"
+              value={password || ""}
               onChange={handlePasswordChange} />
             <span className="popup__span-error" id="input-profession-error" />
             <button className="button button_type_login">Войти</button>

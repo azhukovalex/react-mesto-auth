@@ -25,9 +25,9 @@ function App() {
   const [successToolTip, setSuccessToolTip] = React.useState(false);
   const history = useHistory();
 
-  const [isEditProfilePopupOpen, setEditProfilePopupOpen] = React.useState(false);
-  const [isAddPlacePopupOpen, setAddPlacePopupOpen] = React.useState(false);
-  const [isEditAvatarPopupOpen, setAvatarPopupOpen] = React.useState(false);
+  const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = React.useState(false);
+  const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
+  const [isEditAvatarPopupOpen, setIsAvatarPopupOpen] = React.useState(false);
   const [isConfPopupOpen, setIsConfPopupOpen] = React.useState(false);
   const [cardDelete, setCardDelete] = React.useState({});
   const [isCardSelected, setIsCardSelected] = React.useState(false);
@@ -55,15 +55,15 @@ function App() {
   }
 
   function handleEditAvatarClick() {
-    setAvatarPopupOpen(true);
+    setIsAvatarPopupOpen(true);
   }
 
   function handleEditProfileClick() {
-    setEditProfilePopupOpen(true);
+    setIsEditProfilePopupOpen(true);
   }
 
   function handleAddPlaceClick() {
-    setAddPlacePopupOpen(true);
+    setIsAddPlacePopupOpen(true);
   }
 
   function handleConfDeleteClick() {
@@ -71,9 +71,9 @@ function App() {
   }
 
   function closeAllPopups() {
-    setAvatarPopupOpen(false)
-    setEditProfilePopupOpen(false);
-    setAddPlacePopupOpen(false);
+    setIsAvatarPopupOpen(false)
+    setIsEditProfilePopupOpen(false);
+    setIsAddPlacePopupOpen(false);
     setIsCardSelected(false);
     setDataImage({});
     setIsConfPopupOpen(false);
@@ -190,9 +190,9 @@ function App() {
     return auth
       .authorize(email, password)
       .then((res) => {
-        if (res && res.token) {
+        if (res && email) {
           setLoggedIn(true);
-          tokenCheck();
+          history.push("/");
         } else {
           throw new Error('Не удалось войти в аккаунт')
         }
